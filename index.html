@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zyon beta</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="rain"></div><div class="fog f1"></div><div class="fog f2"></div>
+<header class="topbar">
+<button class="brand" id="home">Z <span>Zyon beta</span></button>
+<nav><button>Finder</button><button>Games</button><button>Window</button><button>Help</button></nav>
+<div class="time"><b id="day"></b><span id="clock"></span></div>
+</header>
+
+<main class="window">
+<div class="titlebar"><div class="traffic"><i></i><i></i><i></i></div><span>Zyon beta</span><b>⌘</b></div>
+<div class="app">
+<aside>
+<small>Browse</small>
+<button class="side active" data-view="library">▱ <span>Library</span></button>
+<button class="side" data-view="recent">◉ <span>Recently played</span></button>
+<button class="side" data-view="favorites">♡ <span>Favorites</span></button>
+</aside>
+<section class="content">
+<div class="heading">
+<div><p>A quiet place to reset.</p><h1 id="title">Library</h1></div>
+<label>⌕ <input id="search" placeholder="Search your library"></label>
+</div>
+<section class="feature">
+<div><em>Focus mode</em><h2>Afterlight</h2><p>A calm, endless glide through the quiet.</p><small>4 min · keyboard</small></div>
+<button id="play">Play</button>
+</section>
+<div class="section"><h3 id="section">Quick picks</h3><span id="count">3 games</span></div>
+<div class="cards" id="cards"></div>
+</section>
+</div></main>
+
+<footer class="dock">
+<button class="dockbtn selected" data-view="library">▦</button>
+<button class="dockbtn" data-view="recent">◷</button>
+<button class="dockbtn" data-view="favorites">♡</button>
+<i></i>
+<button class="dockbtn" id="theme">✦</button>
+<button class="dockbtn" id="about">i</button>
+</footer>
+<div class="toast" id="toast"></div>
+<script src="script.js"></script>
+</body></html>
